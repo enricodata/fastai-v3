@@ -7,10 +7,14 @@
 <body>
 <div>
   <div class='center'>
-    <div class='title'>Classify Bear Images 🐻</div>
+    <div class='title'>Classify face emotions</div>
     <p>
-      Use images of <strong>teddy</strong> bears, <strong>black</strong> bears, <strong>grizzly</strong> bears, or
-      all three!
+      Upload a human face with one of the following emotions: <strong>angry</strong>, <strong>happy</strong>, <strong>sad</strong>, <strong>boring</strong>, <strong>thinking</strong>.
+    
+    </p>
+    <br>
+    <p>
+    I created this model with deep learning with fastai with only 355 images in the training set for the all 5 types of emotions, so the results might improve with a larger training set.
     </p>
     <div class='content'>
       <div class='no-display'>
@@ -32,10 +36,11 @@
         <button id='analyze-button' class='analyze-button' type='button' onclick='analyze()'>Analyze</button>
       </div>
       <div class='result-label'>
-        <label id='result-label'></label>
+          <strong><label id='result-label'></label></strong>
       </div>
     </div>
   </div>
 </div>
 </body>
 </html>
+
